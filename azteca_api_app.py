@@ -2,6 +2,14 @@ from flask import Flask, request, jsonify
 import mysql.connector
 from mysql.connector import Error
 
+db_config = {
+    "host": "localhost",
+    "user": "your_mysql_user",
+    "password": "your_mysql_password",
+    "database": "azteca"
+}
+# This code defines a simple Flask API for booking classes at Azteca.
+
 app = Flask(__name__)
 
 # Replace with your actual MySQL credentials
