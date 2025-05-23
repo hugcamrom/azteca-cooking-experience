@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Azteca Class Booking</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 2rem;
+      max-width: 600px;
+      margin: auto;
+      background-color: #fff8f0;
+    }
+    label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.25rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      margin-top: 1.5rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #e34234;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .success {
+      margin-top: 1rem;
+      color: green;
+    }
+    .error {
+      margin-top: 1rem;
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <h1>Azteca Class Booking</h1>
+  <form id="booking-form">
+    <label>Name:
+      <input type="text" name="name" required />
+    </label>
+    <label>Email:
+      <input type="email" name="email" required />
+    </label>
+    <label>Class Type:
+      <select name="class_type" required>
+        <option value="">-- Choose a class --</option>
+        <option value="Class 1">Class 1 – Staples</option>
+        <option value="Class 2">Class 2 – Mole</option>
+        <option value="Class 3">Class 3 – Tamales</option>
+      </select>
+    </label>
+    <label>Preferred Date:
+      <input type="date" name="preferred_date" required />
+    </label>
+    <label>Language:
+      <select name="language" required>
+        <option value="">-- Choose language --</option>
+        <option value="English">English</option>
+        <option value="Spanish">Spanish</option>
+      </select>
+    </label>
+    <label>Notes:
+      <textarea name="notes" rows="4" placeholder="Anything you'd like to add?"></textarea>
+    </label>
+    <button type="submit">Book Now</button>
+    <div id="message"></div>
+  </form>
+
+  <script>
+    const form = document.getElementById("booking-form");
+    const messageDiv = document.getElementById("message");
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      const formData = new FormData(form);
+      const data = Object.fromEntries(formData.entries());
+
+      try {
+        const response = await fetch("http://127.0.0.1:5000/bookings", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(data)
+        });
+
+const result = await response.json();
+
+if (response.ok) {
+  window.location.href = "thank-you.html";
+} else {
+  messageDiv.textContent = result.error || "Something went wrong.";
+  messageDiv.className = "error";
+}
+
+      } catch (err) {
+        console.error("❌ Fetch failed:", err);
+        messageDiv.textContent = "Request failed.";
+        messageDiv.className = "error";
+      }
+    });
+  </script>
+</body>
+</html>
