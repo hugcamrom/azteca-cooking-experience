@@ -47,7 +47,7 @@
   <h1>Azteca Class Booking</h1>
   <form id="booking-form">
     <label>Name:
-      <input type="text" name="name" required />
+      <input type="text" name="name" required style="text-transform: capitalize;" />
     </label>
     <label>Email:
       <input type="email" name="email" required />
@@ -88,7 +88,7 @@
       const data = Object.fromEntries(formData.entries());
 
       try {
-        const response = await fetch("http://127.0.0.1:5000/bookings", {
+        const response = await fetch("https://hugocamachoromero1.pythonanywhere.com/bookings", {
           method: "POST",
           headers: {
             "Content-Type": "application/json"
