@@ -94,9 +94,9 @@ Then open http://127.0.0.1:5000/booking_form
 
 ---
 
-## 🧡 Acknowledgements
+🧡 Acknowledgements
+To my amazing students, guests, and supporters — thank you for making Azteca unforgettable.
+This project is for you.
+Azteca – to enjoy life!
 
-Thank you to everyone who has supported AZTECA through the years — in-person and now online. This project is for you.
-
-**Azteca – to enjoy life!**
-
+---
