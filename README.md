@@ -3,8 +3,9 @@
 [![Live App](https://img.shields.io/badge/View%20Live-Azteca-green?style=flat&logo=python)](https://azteca-hugocamachoromero1.pythonanywhere.com/booking_form)
 [![Made with Flask](https://img.shields.io/badge/Made%20with-Flask-blue?logo=flask)](https://flask.palletsprojects.com/)
 [![MySQL](https://img.shields.io/badge/Database-MySQL-orange?logo=mysql)](https://www.mysql.com/)
+[![Graph Extension](https://img.shields.io/badge/Coming%20Soon-Neo4j-brightgreen?logo=neo4j)](https://neo4j.com/)
 
-> Book Mexican cooking classes and experience cultural storytelling through food.
+> 🍽️ Book authentic Mexican cooking classes & experience cultural storytelling through food.
 
 ### Features
 - ✅ Online booking with HTML form
