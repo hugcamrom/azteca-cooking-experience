@@ -19,6 +19,17 @@ My logo is proudly inspired by the **Aztec calendar**, symbolising deep cultural
 
 ---
 
+## 🎯 Features
+
+✅ Online booking form with input validation  
+✅ MySQL backend hosted on PythonAnywhere  
+✅ Auto-confirmation + thank-you page  
+✅ Flask-powered RESTful API  
+✅ Ready to integrate Neo4j for student-class relationships  
+✅ Clean Bootstrap-ready UI  
+✅ Portable and educational codebase
+
+---
 
 
 
