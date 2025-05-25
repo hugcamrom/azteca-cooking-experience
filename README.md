@@ -38,6 +38,13 @@ My logo is proudly inspired by the **Aztec calendar**, symbolising deep cultural
 
 ---
 
+## 🖼️ Screenshots
+
+| Booking Form | Thank-You Page |
+| ------------ | -------------- |
+| ![Form](assets/images/booking_form.png) | ![Thanks](assets/images/gracias_bookanotherclass.png) |
+
+---
 
 
 ### How to Run
