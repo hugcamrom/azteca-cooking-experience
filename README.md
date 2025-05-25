@@ -46,11 +46,39 @@ My logo is proudly inspired by the **Aztec calendar**, symbolising deep cultural
 
 ---
 
+## 🗂️ Folder Structure
 
-### How to Run
+```bash
+azteca-cooking-experience/
+│
+├── azteca_api_app.py ← Flask backend logic
+├── templates/ ← HTML templates (booking_form.html, thank-you.html)
+├── assets/images/ ← Logo, class photos, cultural imagery
+├── recipes/ ← Authentic dish instructions
+├── class-outlines/ ← Lesson plans for Classes 1–3
+├── website-ideas/ ← Future WordPress content
+├── aztkcooking.ipynb ← Jupyter notes & visuals
+├── requirements.txt ← Python dependencies
+└── README.md ← This file!
+```---
 
-⏳ Work in Progress
-🛠 Coming Soon...
+## 🧪 How to Run Locally
+
+```bash
+git clone https://github.com/hugcamrom/azteca-cooking-experience.git
+cd azteca-cooking-experience
+python -m venv venv
+source venv/bin/activate       # On Windows: venv\Scripts\activate
+pip install -r requirements.txt
+touch .env                     # And add your DB credentials
+python azteca_api_app.py
+
+```
+
+Then open http://127.0.0.1:5000/booking_form
+
+---
+
 
 
 ## 📂 What You’ll Find Here
