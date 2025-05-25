@@ -88,11 +88,9 @@ Then open http://127.0.0.1:5000/booking_form
 
  ---
 
-## 💬 Get in Touch
-
-Interested in a class or collaboration?  
-📧 **[aztecainfo@azteca.ie](mailto:aztecainfo@azteca.ie)**  
-🌐 Website: [https://azteca.ie](https://azteca.ie)
+💬 Contact
+📧 aztecainfo@azteca.ie
+🌐 https://azteca.ie
 
 ---
 
