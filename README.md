@@ -31,6 +31,13 @@ My logo is proudly inspired by the **Aztec calendar**, symbolising deep cultural
 
 ---
 
+## 🚀 Live Demo
+
+🔗 [**Book a class**](https://azteca-hugocamachoromero1.pythonanywhere.com/booking_form)  
+🎉 After submitting, you’ll be redirected to a friendly thank-you page.
+
+---
+
 
 
 ### How to Run
