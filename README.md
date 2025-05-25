@@ -7,22 +7,20 @@
 
 > 🍽️ Book authentic Mexican cooking classes & experience cultural storytelling through food.
 
-### Features
-- ✅ Online booking with HTML form
-- ✅ MySQL backend hosted on PythonAnywhere
-- ✅ Responsive & styled UI
-- ✅ Thank-you redirect page
-- ✅ Ready for Neo4j class relationship insights
-
-
-
-Welcome to the **Azteca Cooking Experience** – a digital cultural project celebrating authentic Mexican cuisine, created from over two decades of real-world culinary passion and teaching. This project is a continuation of the AZTECA brand, reborn online to share cooking classes, recipes, and stories that honour Mexican heritage.
+---
 
 ## 🌟 About the Project
 
-After 22 years running my restaurant and cooking school in Dublin, Ireland, I transitioned to an online space to continue sharing the joy of traditional Mexican cooking. My logo is proudly inspired by the **Aztec calendar**, symbolising deep cultural roots and the timeless joy of food.
+Welcome to the **Azteca Cooking Experience** – a cultural, culinary, and digital storytelling project.  
+After 22 years running **AZTECA** (restaurant + school) in Dublin, Ireland, this platform continues my mission:  
+to teach, celebrate, and share **authentic Mexican cuisine** online.
 
-Whether you want to cook along with me, learn about Mexican ingredients, or simply explore the flavours of Mexico, this space is for you.
+My logo is proudly inspired by the **Aztec calendar**, symbolising deep cultural roots and the timeless joy of food.
+
+---
+
+
+
 
 ### How to Run
 
