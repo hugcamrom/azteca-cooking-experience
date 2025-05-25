@@ -79,15 +79,14 @@ Then open http://127.0.0.1:5000/booking_form
 
 ---
 
+🧠 Next Steps
+ 🔄 Sync to Neo4j to map student-class relationships
 
+ 💄 Add Bootstrap polish for a responsive layout
 
-## 📂 What You’ll Find Here
+ 🌐 Integrate with WordPress site at azteca.ie
 
-- `recipes/` – Original recipes with authentic ingredients and instructions  
-- `class-outlines/` – Teaching plans from my cooking classes  
-- `video-links.md` – Links to live or recorded cooking sessions  
-- `images/` – Visuals from my culinary journey and teaching  
-- `website-ideas/` – Drafts and content for my refreshed WordPress website
+ ---
 
 ## 💬 Get in Touch
 
