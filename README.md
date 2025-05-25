@@ -62,7 +62,7 @@ azteca-cooking-experience/
 └── README.md ← This file!
 ```---
 
-## 🧪 How to Run Locally
+🧪 How to Run Locally
 
 ```bash
 git clone https://github.com/hugcamrom/azteca-cooking-experience.git
