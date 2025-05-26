@@ -1,9 +1,10 @@
+
 # Azteca Cooking Experience 🌶️
 
 [![Live App](https://img.shields.io/badge/View%20Live-Azteca-green?style=flat&logo=python)](https://azteca-hugocamachoromero1.pythonanywhere.com/booking_form)
 [![Made with Flask](https://img.shields.io/badge/Made%20with-Flask-blue?logo=flask)](https://flask.palletsprojects.com/)
 [![MySQL](https://img.shields.io/badge/Database-MySQL-orange?logo=mysql)](https://www.mysql.com/)
-[![Graph Extension](https://img.shields.io/badge/Coming%20Soon-Neo4j-brightgreen?logo=neo4j)](https://neo4j.com/)
+[![Neo4j Extension](https://img.shields.io/badge/Neo4j-Graph%20Enabled-brightgreen?logo=neo4j)](https://neo4j.com/)
 
 > 🍽️ Book authentic Mexican cooking classes & experience cultural storytelling through food.
 
@@ -21,13 +22,13 @@ My logo is proudly inspired by the **Aztec calendar**, symbolising deep cultural
 
 ## 🎯 Features
 
-✅ Online booking form with input validation  
-✅ MySQL backend hosted on PythonAnywhere  
-✅ Auto-confirmation + thank-you page  
-✅ Flask-powered RESTful API  
-✅ Ready to integrate Neo4j for student-class relationships  
-✅ Clean Bootstrap-ready UI  
-✅ Portable and educational codebase
+- ✅ Online booking form with input validation  
+- ✅ MySQL backend hosted on PythonAnywhere  
+- ✅ Auto-confirmation + thank-you page  
+- ✅ Flask-powered RESTful API  
+- ✅ Live Neo4j integration for student-class relationships  
+- ✅ Clean Bootstrap-ready UI  
+- ✅ Portable and educational codebase
 
 ---
 
@@ -46,57 +47,74 @@ My logo is proudly inspired by the **Aztec calendar**, symbolising deep cultural
 
 ---
 
+## 🧠 Graph Insights (Neo4j)
+
+Explore live data from your class bookings visualised as a graph.
+
+| Bookings Overview | All Relationships |
+|-------------------|-------------------|
+| ![Bookings](assets/images/bookings_graph.png) | ![Details](assets/images/relationships_graph.png) |
+
+---
+
+## 🧩 Cypher Query Examples
+
+```cypher
+// All student bookings
+MATCH (s:Student)-[r:BOOKED]->(c:Class)
+RETURN s, r, c
+
+// All relationships in the graph
+MATCH p=()-->() RETURN p LIMIT 25
+```
+
+---
+
 ## 🗂️ Folder Structure
 
 ```bash
 azteca-cooking-experience/
 │
-├── azteca_api_app.py ← Flask backend logic
-├── templates/ ← HTML templates (booking_form.html, thank-you.html)
-├── assets/images/ ← Logo, class photos, cultural imagery
-├── recipes/ ← Authentic dish instructions
-├── class-outlines/ ← Lesson plans for Classes 1–3
-├── website-ideas/ ← Future WordPress content
-├── aztkcooking.ipynb ← Jupyter notes & visuals
-├── requirements.txt ← Python dependencies
-└── README.md ← This file!
-```---
+├── azteca_api_app.py            # Flask backend logic
+├── sync_mysql_to_neo4j.py       # Python sync script for Neo4j
+├── test_neo4j_connection.py     # Simple Neo4j connection test
+├── templates/                   # HTML templates
+├── assets/images/               # Screenshots and visuals
+├── recipes/                     # Authentic recipes
+├── class-outlines/              # Lesson plans
+├── website-ideas/               # Drafts for future WordPress site
+├── aztkcooking.ipynb            # Jupyter research and notes
+├── requirements.txt             # Python dependencies
+└── README.md                    # This file
+```
 
-🧪 How to Run Locally
+---
+
+## 🧪 How to Run Locally
 
 ```bash
 git clone https://github.com/hugcamrom/azteca-cooking-experience.git
 cd azteca-cooking-experience
 python -m venv venv
-source venv/bin/activate       # On Windows: venv\Scripts\activate
+source venv/bin/activate       # Windows: venv\Scripts\activate
 pip install -r requirements.txt
-touch .env                     # And add your DB credentials
+touch .env                     # Add your DB & Neo4j credentials
 python azteca_api_app.py
-
 ```
 
-Then open http://127.0.0.1:5000/booking_form
+Then open [http://127.0.0.1:5000/booking_form](http://127.0.0.1:5000/booking_form)
 
 ---
 
-🧠 Next Steps
- 🔄 Sync to Neo4j to map student-class relationships
+## 💬 Contact
 
- 💄 Add Bootstrap polish for a responsive layout
-
- 🌐 Integrate with WordPress site at azteca.ie
-
- ---
-
-💬 Contact
-📧 aztecainfo@azteca.ie
-🌐 https://azteca.ie
+📧 [aztecainfo@azteca.ie](mailto:aztecainfo@azteca.ie)  
+🌐 [https://azteca.ie](https://azteca.ie)
 
 ---
 
-🧡 Acknowledgements
-To my amazing students, guests, and supporters — thank you for making Azteca unforgettable.
-This project is for you.
-Azteca – to enjoy life!
+## 🧡 Acknowledgements
 
----
+To my amazing students, guests, and supporters — thank you for making Azteca unforgettable.  
+This project is for you.  
+**Azteca – to enjoy life!**
