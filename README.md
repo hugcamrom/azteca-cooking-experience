@@ -105,6 +105,33 @@ python azteca_api_app.py
 Then open [http://127.0.0.1:5000/booking_form](http://127.0.0.1:5000/booking_form)
 
 ---
+📚 Sources & References
+Flask Documentation – https://flask.palletsprojects.com
+For building and deploying RESTful APIs in Python.
+
+MySQL Docs – https://dev.mysql.com/doc/
+For database setup and query standards.
+
+Neo4j Cypher Manual – https://neo4j.com/docs/cypher-manual/current/
+Reference for writing and optimising graph queries.
+
+PythonAnywhere Help – https://help.pythonanywhere.com/
+Used for deployment, web app configuration, and bash scripting.
+
+Bootstrap – https://getbootstrap.com
+Optional CSS framework for responsive UI enhancements.
+
+Shields.io – https://shields.io
+Used to generate the README badges.
+
+Aztec Calendar Symbolism – https://en.wikipedia.org/wiki/Aztec_calendar
+Inspiration behind the project’s logo and cultural aesthetic.
+
+GitHub Copilot – Assisted with autocompletion and code suggestions throughout development.
+
+ChatGPT – Used for academic purposes during the learning process to plan, debug, document, and structure the project.
+
+---
 
 ## 💬 Contact
 
