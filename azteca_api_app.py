@@ -12,7 +12,6 @@ from pymysql.err import MySQLError as Error
 app = Flask(__name__, template_folder='templates')
 CORS(app, resources={r"/bookings": {"origins": "*"}})
 
-
 # ------------------ Serve Booking Form ------------------ #
 @app.route("/booking_form")
 def serve_booking_form():
@@ -39,7 +38,6 @@ def handle_bookings():
                 if not data.get(field):
                     return jsonify({"error": f"Missing or empty field: {field}"}), 400
 
-            #print("🔍 DB config:", db_config)
             connection = pymysql.connect(**db_config)
             cursor = connection.cursor()
             cursor.execute("""
@@ -90,6 +88,11 @@ def handle_bookings():
 @app.route("/thank-you.html")
 def thank_you():
     return render_template("thank-you.html")
+
+@app.route("/")
+def home():
+    return render_template("index.html")
+# ------------------ Serve Static Files ------------------ #
 
 
 # ------------------ Entry Point ------------------ #
