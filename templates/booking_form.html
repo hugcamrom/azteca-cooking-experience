@@ -52,17 +52,30 @@
     <label>Email:
       <input type="email" name="email" required />
     </label>
-    <label>Class Type:
-      <select name="class_type" required>
-        <option value="">-- Choose a class --</option>
-        <option value="Class 1">Class 1 – Staples</option>
-        <option value="Class 2">Class 2 – Mole</option>
-        <option value="Class 3">Class 3 – Tamales</option>
-      </select>
-    </label>
-    <label>Preferred Date:
-      <input type="date" name="preferred_date" required />
-    </label>
+    <label>Class Session:
+  <select id="class_session" required>
+    <option value="">-- Choose a session --</option>
+
+    <option 
+      value="Class 1|2026-07-10 18:00">
+      Class 1 – Mexican Staples | Friday 10 July 2026 | 18:00
+    </option>
+
+    <option 
+      value="Class 2|2026-07-17 18:00">
+      Class 2 – Mole Enchiladas | Friday 17 July 2026 | 18:00
+    </option>
+
+    <option 
+      value="Class 3|2026-07-24 18:00">
+      Class 3 – Tamales | Friday 24 July 2026 | 18:00
+    </option>
+  </select>
+</label>
+
+<input type="hidden" name="class_type" id="class_type" />
+<input type="hidden" name="preferred_date" id="preferred_date" />
+
     <label>Language:
       <select name="language" required>
         <option value="">-- Choose language --</option>
@@ -86,6 +99,18 @@
 
       const formData = new FormData(form);
       const data = Object.fromEntries(formData.entries());
+      const sessionValue = document.getElementById("class_session").value;
+
+      if (!sessionValue) {
+  messageDiv.textContent = "Please choose a class session.";
+  messageDiv.className = "error";
+  return;
+}
+
+const [classType, preferredDate] = sessionValue.split("|");
+
+data.class_type = classType;
+data.preferred_date = preferredDate;
 
       try {
 const response = await fetch("/bookings", {
