@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Azteca Bookings Admin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff8f0;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #b83227;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background: #e34234;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background: #f9f9f9;
+    }
+
+    a {
+      color: #e34234;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>📋 Azteca Bookings</h1>
+
+  <p><a href="/booking_form">← Back to booking form</a></p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Class</th>
+        <th>Date</th>
+        <th>Language</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      {% for b in bookings %}
+      <tr>
+        <td>{{ b.id }}</td>
+        <td>{{ b.name }}</td>
+        <td>{{ b.email }}</td>
+        <td>{{ b.class_type }}</td>
+        <td>{{ b.preferred_date }}</td>
+        <td>{{ b.language }}</td>
+        <td>{{ b.notes }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+</body>
+</html>
